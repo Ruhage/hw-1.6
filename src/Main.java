@@ -1,28 +1,21 @@
 public class Main {
     public static void main(String[] args) {
-
         /// Задание 1
         System.out.println("Задание 1");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println(i);
+        int monay = 29000;
+        int sun = 0;
+        for (int i = 1; i <= 12; i++) {
+            sun += monay;
+            System.out.println("Месяц " +i+ " сумма накоплений равна " + sun + " рублей");
         }
 
         /// Задание 2
         System.out.println("Задание 2");
-        for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
-        }
-
-        /// Задание 3
-        System.out.println("Задание 3");
-        for (int i = 0; i < 17; i += 2) {
-            System.out.println(i);
-        }
-
-        /// Задание 4
-        System.out.println("Задание 4");
-        for (int i = 10; i >= -10; i--) {
-            System.out.println(i);
+        double sumPercent = 0;
+        double percent = 0.01;
+        for (int i = 1; i <= 12; i++) {
+            sumPercent = (sumPercent + monay) * (1 + percent);
+            System.out.println("Месяц " +i+ " сумма накоплений равна " +sumPercent+ "рублей");
         }
     }
 }
